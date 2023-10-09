@@ -1,0 +1,9 @@
+# cook your dish here
+t=int(input())
+for i in range(t):
+    n=int(input())
+    a=list(map(int,input().split()))
+    b=[]
+    for i in a:
+        b.append(a.count(i))
+    print(n-max(b))
